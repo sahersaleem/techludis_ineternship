@@ -31,19 +31,19 @@ const navbar_links = [
 export default function Hero() {
   const path = usePathname();
   return (
-    <div className="w-screen  lg:rounded-tr-2xl overflow-x-hidden overflow-y-hidden bg-white custom-blur-shape min-h-screen h-auto">
+    <div className="w-full lg:w-screen  lg:rounded-tr-2xl overflow-x-hidden overflow-y-hidden bg-white custom-blur-shape min-h-screen h-auto">
       <div className="relative sm:m-[30px] h-auto min-h-screen ">
         <Image
           src={"/images/hero2.jpg"}
           alt="image"
           width={800}
           height={800}
-          className="absolute w-[calc(100%-30px)]  h-[170vh] lg:h-[884px]   object-center "
+          className="absolute lg:w-[calc(100%-30px)]  h-[170vh] lg:h-[884px] w-screen   object-center "
         />
         <div className="absolute top-0 left-0 w-[calc(100%-30px)]  h-[884px] bg-[#00000099] z-10 " />
-        <div className="relative z-20 ">
+        <div className="relative z-20 w-full ">
           <div className="flex justify-between items-start">
-            <div className="bg-white w-[200px] h-[100px] p-3 rounded-br-[40px] hidden lg:block">
+            <div className="bg-white w-[200px] h-[100px] p-3 lg:rounded-br-[40px] hidden lg:block">
               <Image
                 src="/images/logo.png"
                 alt="logo"
@@ -71,18 +71,18 @@ export default function Hero() {
                   ))}
                 </div>
               </nav>
-              <div className="w-[250px] h-screen bg-[#9F05078F]/50 rotate-[8deg] rounded-tr-xl z-50 mt-3  hidden lg:block"></div>
+              <div className="w-[250px] h-screen bg-[#9F05078F]/50 rotate-[8deg] lg:rounded-tr-xl z-50 mt-3  hidden lg:block"></div>
             </div>
 
-            <div className="bg-white p-3 h-[100px] z-50 rounded-bl-[40px]">
-              <button className="w-[200px] h-[72px] bg-gradient-to-l from-[#9C0E0F] to-[#360505] rounded-[32px] hidden lg:block">
+            <div className="bg-white p-3 h-[100px] z-50 lg:rounded-bl-[40px] hidden lg:inline-block">
+              <button className="w-[200px] h-[72px] bg-gradient-to-l from-[#9C0E0F] to-[#360505] lg:rounded-[32px] hidden lg:block">
                 Log in
               </button>
             </div>
           </div>
 
-          <div className="">
-            <div className="z-50  text-white p-4 overflow-x-hidden  lg:absolute lg:top-[198px] max-w-7xl w-full flex justify-around items-center  mx-auto flex-col lg:flex-row  left-0 ">
+          
+            <div className="z-50  text-white p-4 overflow-x-hidden  lg:absolute lg:top-[198px] lg:max-w-7xl w-full flex justify-around items-center  mx-auto flex-col lg:flex-row  lg:left-0 ">
               <div className="sm:w-[60%] mt-20 lg:-mt-28 h-full flex lg:block items-center justify-center flex-col">
                 <h1 className="text-4xl sm:text-7xl font-bold text-center lg:text-left">
                   Your Gateway To{" "}
@@ -101,7 +101,7 @@ export default function Hero() {
                 </p>
               </div>
               <div className=" mt-10 lg:mt-0 lg:w-[40%] ">
-                <div className="w-[320px]  lg:w-[450px] lg:h-[517px] bg-[#FFFFFF] py-[47px] px-[50px] ">
+                <div className="w-[300px]  lg:w-[450px] lg:h-[517px] bg-[#FFFFFF] py-[47px] px-[50px] ">
                   <div className="flex w-full p-[16px] gap-x-3 justify-center items-center">
                     <Image
                       src={"/images/bookOnline.png"}
@@ -172,6 +172,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+  
   );
 }

@@ -12,7 +12,7 @@ import Features from './_components/Features'
 
 const page = () => {
   return (
-    <div className='text-white bg-[#E9E9E9]'>
+    <div className='text-white bg-[#E9E9E9] overflow-x-hidden'>
       <Hero/>
       <Fleet/>
       <BabySeatServices/>
