@@ -1,7 +1,7 @@
 import React from "react";
 
 import { LuCar } from "react-icons/lu";
-import Image from "next/image";
+
 
 const featureData = [
   {

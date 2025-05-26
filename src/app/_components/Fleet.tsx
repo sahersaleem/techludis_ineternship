@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { MdArrowBackIos } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
 
 const Fleet = () => {
   return (
